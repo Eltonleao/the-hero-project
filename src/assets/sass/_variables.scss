@@ -1,0 +1,28 @@
+// Responsivo
+$mincelular: 'min-width: 767px';
+$mindesktop: 'min-width: 992px';
+$minlarge:   'min-width: 1200px';
+
+$maxcelular: 'max-width: 767px';
+$maxdesktop: 'max-width: 992px';
+$maxlarge:   'max-width: 1200px';
+
+//Cores
+
+$white      : #fff;
+$black      : #000;
+$red		: #ec2e33;
+$cor1		: #ff792f;
+$cor2		: #ec2e33;
+
+//Váriaveis e-commerce
+
+$cor_loading      : $cor1;
+$cor-input-error  : red;
+$cor_texto        : lighten($black, 70%); //contato, empresa, 
+$cor_link         : $cor_texto;
+$cor_contato_label: lighten($black, 50%);
+$cor_btn          : $cor1;
+$cor_btn_hover    : lighten($cor1, 25%);
+$btn_text         : $white;
+$cor_preco        : $black;

@@ -1,0 +1,28 @@
+<div class="col-lg-5 offset-lg-1 col-md-6 col-12">
+	<div class="bloco" >
+		<form action="#" id="cadastro" data-controller="home">
+			<input type="hidden" name="id" value="1">
+			<h3>Primeiro Acesso</h3>
+			<div class="form-group row">
+				<div class="col-12">
+					<input type="" class="form-control" id="user_email" name="user_email" placeholder="Seu endereço de e-mail para acesso" value="<?= @$this->agencia['email'] ?>" required>
+				</div>
+			</div>
+			<div class="form-group row">
+				<div class="col-12">
+					<input type="password" class="form-control" id="senha" name="user_password" placeholder="Crie sua senha para acesso" value="" required pattern=".{1,}" title="Mínimo de 6 caracteres">
+				</div>
+			</div>
+			<!-- <div class="row">
+							<div class="col-12">
+								<p class="termos-uso">Ao continuar você declara que leu e aceita os <a href="" target="_blank">termos de uso</a>.</p>
+							</div>
+						</div> -->
+			<div class="row">
+				<div class="col-12">
+					<button type="submit" class="btn">Começar a usar</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>

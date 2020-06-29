@@ -1,0 +1,55 @@
+{
+  "name": "project-name",
+  "version": "0.1.0",
+  "title": "Project Title",
+  "homepage": "http://www.project.com",
+  "description": "Some description.",
+  "private": true,
+  "author": "Author name <author@email.com> (http://authorsite.com.br)",
+  "keywords": [
+    "framework",
+    "boilerplate",
+    "project",
+    "sass",
+    "compass",
+    "grunt",
+    "bower",
+    "php"
+  ],
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "engines": {
+    "node": ">=0.8.0",
+    "npm": ">=1.1.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-autoprefixer": "~0.6.3",
+    "grunt-contrib-compass": "^0.6.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-uglify": "~0.2.4",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-ftp-deploy": "0.0.10",
+    "grunt-ftpush": "~0.3.3",
+    "grunt-rsync": "~0.2.1",
+    "grunt-shell": "~0.6.4",
+    "load-grunt-tasks": "~0.2.0",
+    "time-grunt": "~0.1.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "grunt-cli": "^1.3.2",
+    "jquery": "^3.5.1",
+    "material-design-lite": "^1.3.0",
+    "sweetalert": "^2.1.2",
+    "sweetalert2": "^9.15.2"
+  },
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "license": "ISC"
+}

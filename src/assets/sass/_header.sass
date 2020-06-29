@@ -1,0 +1,280 @@
+header
+    .header
+        transition: 1s
+        padding: 20px 0
+        background: url("../img/header/fundo-topo.png") (center / cover) no-repeat
+        background-color: #000
+
+        p, a
+            color: $white
+            margin: 0
+
+        #header_contato_menu_usuario
+            // border-bottom: 1px solid #626262
+            // margin-bottom: 15px
+
+            .navbar-dark .navbar-nav .nav-link
+                color: $white
+
+            .navbar
+                padding: 0
+                float: right
+
+                .nav-link
+                    padding: 0 0.5rem
+
+                .nav-item:last-child
+                    .nav-link
+                        padding-right: 0
+
+        hr
+            margin: 15px auto
+            border-color: #626262
+
+        #header_busca
+            .input-group
+                > input
+                    background: #fff
+                    border-radius: 20px
+                    height: 45px
+
+                .input-group-append
+                    position: absolute
+                    right: 20px
+                    top: 10px
+
+                    .btn
+                        padding: 0
+                        background: transparent
+                        color: $cor1
+
+        #header_revenda, #header_carrinho
+            position: relative
+
+            img
+                position: absolute
+                left: 15px
+
+            p, a
+                padding-left: 50px
+
+    #header_carrinho, #header_revenda
+        p, a
+            font-size: 12px
+            line-height: 15px
+            display: block
+
+            &:hover
+                text-decoration: none
+
+    .menu
+        background: $cor1
+
+        #navbarHeader
+            display: block !important
+            width: 100%
+
+            ul
+                width: 100%
+                display: block
+                text-align: center
+
+                li
+                    display: inline-block
+
+        .container-fluid, .row, .col-12
+            margin: 0
+            padding: 0
+
+        .navbar
+            padding: 0px
+
+        .nav-item
+            .nav-link
+                color: $white
+                font-size: 15px
+                font-weight: 400
+                text-decoration: none
+                // padding: 17px 12px
+
+                // -webkit-transition: all .5s
+                // transition: all .5s
+                &:hover
+                    background-color: darken($cor1, 7%)
+                    cursor: pointer
+
+                .material-icons
+                    font-size: 28px
+                    vertical-align: middle
+                    color: rgba(255, 255, 255, 0.56)
+
+            .dropdown
+                position: relative
+                display: inline-block
+
+                &:hover
+                    .dropdown-content
+                        display: block
+
+            .dropdown-content
+                display: none
+                position: absolute
+                background-color: $cor1
+                min-width: 160px
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2)
+                z-index: 1
+                width: 100%
+                lef: 0
+
+                a
+                    color: white
+                    padding: 12px 16px
+                    text-decoration: none
+                    display: block
+
+                    &:hover
+                        background-color: darken($cor1, 7%)
+
+            &:last-child
+                .dropdown-content
+                    right: 0
+
+    @media(max-width: 992px)
+        .logo
+            img
+                max-width: 200px
+                display: block
+                margin: 7px auto 30px auto
+
+        #header_busca
+            margin-top: 30px
+
+        #header_revenda
+            img
+                position: unset !important
+                float: left
+                margin-left: 15px
+
+            a
+                padding-left: 5px !important
+                float: left
+
+    // RESPONSIVO
+    .navbar-toggler
+        padding: 4px 7px
+        margin-top: 3px
+
+    .navbar-light
+        padding: 0
+        float: right
+        margin-right: 15px
+
+        .navbar-toggler-icon
+            background-image: url("../img/burger.svg")
+
+    .navbar-side
+        height: 100%
+        position: fixed
+        padding: 0
+        top: 0
+        right: 0
+        list-style: none
+        background-color: #f7f7f9
+        overflow-y: scroll
+        z-index: 1000
+        -webkit-transform: translateX(100%)
+        -ms-transform: translateX(100%)
+        transform: translateX(100%)
+
+        // -webkit-transition: 300ms ease
+        // transition: 300ms ease
+        text-transform: uppercase
+
+        a
+            font-size: 14px
+
+        .bg-laranja
+            background-color: $cor1
+            padding-top: 50px
+
+            .nav-item
+                border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+                padding: 10px 0
+
+        .pad-nav
+            padding: 0 50px 50px 50px
+
+        @media(max-width: 991px)
+            width: 60%
+
+        @media(max-width: 768px)
+            width: 70%
+
+        @media(max-width: 500px)
+            width: 80%
+
+    .closebtn
+        position: absolute
+        top: 0
+        left: 25px
+        font-size: 48px !important
+        margin-right: 50px
+        color: $white !important
+
+    .navbar-side-item, #navbar-side-item
+        margin: 0
+        text-align: center
+        padding: 20px 0
+        border-bottom: 1px solid lighten($cor1, 75%)
+
+        a
+            // font-size: 18px
+            color: gray
+
+    .reveal
+        -webkit-transform: translateX(0%)
+        -ms-transform: translateX(0%)
+        transform: translateX(0%)
+        -webkit-transition: 300ms ease
+        transition: 300ms ease
+
+    .overlay
+        position: fixed
+        display: none
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        cursor: pointer
+        background-color: #ccc
+        opacity: 0.6
+        z-index: 990
+
+header.scrolling
+    background-color: $white
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15)
+    position: fixed
+    top: 0
+    right: 0
+    left: 0
+    z-index: 1030
+
+    .header
+        padding: 10px 0
+
+        #header_contato_menu_usuario
+            display: none
+            margin-bottom: 10px
+
+        hr
+            margin: 10px auto
+            border-color: #626262
+
+        .logo
+            img
+                width: 80%
+
+    .menu
+        .nav-item
+            .nav-link
+                padding: 12px 12px

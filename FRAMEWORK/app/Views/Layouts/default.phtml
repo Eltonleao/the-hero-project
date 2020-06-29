@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+	<title>Project</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="<?= CSS ?>style.css">
+	<link rel="stylesheet" href="<?= CSS ?>libs.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	
+</head>
+
+<body data-url="<?= URL ?>">
+	<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+	<?php include_once("navbar.phtml"); ?>
+		<main class="mdl-layout__content">
+			{conteudo}
+		</main>
+	</div>
+
+	<script src="<?= JS ?>libs.min.js" defer></script>
+	<script src="<?= JS ?>site.min.js" defer></script>
+
+</body>
+
+</html>

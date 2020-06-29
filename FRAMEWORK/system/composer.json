@@ -1,0 +1,8 @@
+{
+    "name": "vendor/lothus-php",
+    "description": "framewor php para maxisite",
+    "require": {
+        "php": ">=7",
+        "phpmailer/phpmailer": "^6.1"
+    }
+}
